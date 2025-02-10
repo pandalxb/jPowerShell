@@ -1,6 +1,6 @@
 ![](https://img.shields.io/maven-central/v/io.github.pandalxb/jPowerShell.svg)
 ![](https://img.shields.io/github/license/pandalxb/jPowerShell.svg)
-![](https://travis-ci.org/pandalxb/jPowerShell.svg)
+![](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 # jPowerShell
 
