@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.pandalxb.jpowershell;
+package io.github.pandalxb.jpowershell;
 
 /**
  * Response of PowerShell command. This object encapsulate all the useful

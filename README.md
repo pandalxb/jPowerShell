@@ -1,4 +1,4 @@
-![](https://img.shields.io/maven-central/v/com.pandalxb/jPowerShell.svg)
+![](https://img.shields.io/maven-central/v/io.github.pandalxb/jPowerShell.svg)
 ![](https://img.shields.io/github/license/pandalxb/jPowerShell.svg)
 ![](https://travis-ci.org/pandalxb/jPowerShell.svg)
 
@@ -20,7 +20,7 @@ Simple Java API that allows to interact with PowerShell console
 To install jPowerShell for Maven you have just to add to your pom.xml:
 
       <dependency>
-        <groupId>com.pandalxb</groupId>
+        <groupId>io.github.pandalxb</groupId>
         <artifactId>jPowerShell</artifactId>
         <version>1.0.0</version>
       </dependency>

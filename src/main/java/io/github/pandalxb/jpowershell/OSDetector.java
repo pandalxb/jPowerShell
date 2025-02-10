@@ -1,6 +1,4 @@
 /*
- * Copyright 2016-2019 Javier Garcia Alonso.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,21 +11,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.pandalxb.jpowershell;
+package io.github.pandalxb.jpowershell;
 
 /**
- * Custom checked exception produced when the Powershell executable cannot
- * be found
+ * Detects used OS
  *
  * @author Javier Garcia Alonso
  */
-public class PowerShellNotAvailableException extends RuntimeException {
+class OSDetector {
 
-    PowerShellNotAvailableException(String message) {
-        super(message);
+    private static final String OS = System.getProperty("os.name").toLowerCase();
+
+    public static boolean isWindows() {
+        return (OS.contains("win"));
     }
 
-    PowerShellNotAvailableException(String message, Throwable cause) {
-        super(message, cause);
+    public static boolean isMac() {
+        return (OS.contains("mac"));
+    }
+
+    public static boolean isUnix() {
+        return (OS.contains("nix") || OS.contains("nux") || OS.contains("aix"));
+    }
+
+    public static boolean isSolaris() {
+        return (OS.contains("sunos"));
     }
 }

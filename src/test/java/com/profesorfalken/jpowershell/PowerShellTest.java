@@ -1,4 +1,4 @@
-package com.pandalxb.jpowershell;
+package io.github.pandalxb.jpowershell;
 
 import org.junit.Assert;
 import org.junit.Rule;
