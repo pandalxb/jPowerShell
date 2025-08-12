@@ -127,7 +127,7 @@ class PowerShellCommandProcessor implements Callable<String> {
 
         //If not ready yet, wait a moment to make sure it is finished
         if (!this.reader.ready()) {
-            Thread.sleep(50);
+            Thread.sleep(this.waitPause);
         }
 
         return this.reader.ready();

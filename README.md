@@ -22,7 +22,7 @@ To install jPowerShell for Maven you have just to add to your pom.xml:
       <dependency>
         <groupId>io.github.pandalxb</groupId>
         <artifactId>jPowerShell</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
       </dependency>
 
 ## Basic Usage

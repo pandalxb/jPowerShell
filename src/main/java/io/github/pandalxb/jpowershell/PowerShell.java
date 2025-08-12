@@ -206,7 +206,7 @@ public class PowerShell implements AutoCloseable {
                     timeout = true;
                     isError = true;
                     //Interrupt command after timeout
-                    result.cancel(true);
+                    result.cancel(false);
                 }
             }
         } catch (InterruptedException | ExecutionException ex) {
@@ -454,7 +454,7 @@ public class PowerShell implements AutoCloseable {
                 logger.log(Level.WARNING,
                         "Powershell process cannot be closed. Session seems to be blocked");
                 //Interrupt command after timeout
-                task.cancel(true);
+                task.cancel(false);
                 closed = false;
             }
         }
