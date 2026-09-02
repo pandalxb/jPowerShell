@@ -141,7 +141,7 @@ public class PowerShell implements AutoCloseable {
         //Start powershell executable in process
         if (OSDetector.isWindows()) {
             pb = new ProcessBuilder("cmd.exe", "/c", "chcp", codePage, ">", "NUL", "&", powerShellExecutablePath,
-                    "-ExecutionPolicy", "Bypass", "-NoExit", "-NoProfile", "-Command", "-");
+                    "-ExecutionPolicy", "Bypass", "-NoExit", "-NoProfile", "-NonInteractive", "-Command", "-");
         } else {
             pb = new ProcessBuilder(powerShellExecutablePath, "-nologo", "-noexit", "-Command", "-");
         }
